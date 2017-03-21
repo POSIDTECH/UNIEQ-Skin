@@ -1,0 +1,77 @@
+/* grundlegende Farbe von Text, Vererbung beachten */
+body {
+	color: #000;
+}
+
+/* Hintergrundfarbe weiß, keine Gradienten */
+.ipsLogin, .ipsWebFront {
+	background-color: #ffffff;
+	background-image: none !important;
+}
+
+/* Logo austauschen */
+.ipsLogin>.logo {
+	background-image: url(logo.png);
+
+	/* margin-left muss die Hälfte der Breite der Logo-Datei sein */
+	margin-left: -110px;
+
+	/* margin-top muss in Abhängigkeit der Höhe der Logo-Datei gewählt werden; ausprobieren, was gut aussieht */
+	margin-top: -200px;
+
+	/* width muss mit Breite der Logo-Datei übereinstimmen */
+	width: 220px;
+
+	/* height muss mit Höhe der Logo-Datei übereinstimmen */
+	height: 120px;
+}
+
+/* Farbe der Eingabe-Text-Felder während des Editieren vom Variablen */
+.ipsCategory>.container.content.visual>.text>input[type=text] {
+	color: #000;
+}
+
+.ipsDialog>div {
+	background: rgba(190, 190, 190, 0.9);
+	border-color: rgba(0, 0, 0, 0.5);
+}
+
+.ipsDialog.ipsHTMLDialog>div>.content {
+	right: 0px;
+}
+
+.ipsDialog>div>.content {
+	background: rgba(255, 255, 255, 0.8);
+}
+
+/* Farbe des Bandes auf dem Login-Screen, hier kommt für POSID der rötliche Ton */
+.ipsLogin>.content>.configurators {
+	background: none repeat scroll 0 0 rgba(160, 30, 30, 0.9);
+}
+
+/* Schriftfarbe im Band vom Login-Screen auf weiß setzen, sonst schwarz durch Vererbung, nicht so hübsch */
+.ipsLogin>.content>.configurators>div {
+	color: #fff;
+}
+
+/* rötlicher Ton mit weißem Text */
+.ipsNotifications>.ipsNotification>.message {
+	background: rgba(160, 30, 30, 0.85);
+	text: #fff;
+}
+
+/* Hintergrundfarbe der Menüleiste am oberen Browserrand */
+.ipsTabPane>.navigation {
+	background-color: #96be1e;
+	color: #fff;
+}
+
+/* bei den gerade nicht aktiven Buttons in der Menüleiste das Weiß etwas kräftiger machen (vorher: 0.5) */
+.ipsTabPane>.navigation>.scroll>.buttons>div {
+	opacity: 0.8;
+}
+
+/* Spinner tauschen */
+.iconSpinner {
+	background-image: url(spinner.svg);
+}
