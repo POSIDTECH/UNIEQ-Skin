@@ -26,6 +26,16 @@ body {
 	height: 120px;
 }
 
+/* Workaround wg. kleiner Verschiebung des Buttons im Firefox */
+.ipsLogin>.content>.password button {
+	position: absolute;
+}
+
+/* weißer Text als Fehlermeldung sieht besser aus als roter Text auf dem roten Band */
+.ipsLogin>.content>.configurators>.errorText {
+	color: #fff;
+}
+
 /* Farbe der Eingabe-Text-Felder während des Editieren vom Variablen */
 .ipsCategory>.container.content.visual>.text>input[type=text] {
 	color: #000;
